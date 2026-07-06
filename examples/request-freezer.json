@@ -1,0 +1,146 @@
+{
+  "spec": {
+    "roomNumber": "201",
+    "name": "Заморозка",
+    "dimensions": { "lengthM": 30.0, "widthM": 18.0, "heightM": 8.0 },
+    "wallA": {
+      "structure": { "material": { "name": "Отсутствует", "thermalConductivity": 0.0 }, "thicknessMm": 0 },
+      "insulation": { "material": { "name": "ПИР", "thermalConductivity": 0.024 }, "thicknessMm": 200 },
+      "outsideTemperatureC": 8
+    },
+    "wallB": {
+      "structure": { "material": { "name": "Отсутствует", "thermalConductivity": 0.0 }, "thicknessMm": 0 },
+      "insulation": { "material": { "name": "ПИР", "thermalConductivity": 0.024 }, "thicknessMm": 200 },
+      "outsideTemperatureC": 4
+    },
+    "wallV": {
+      "structure": { "material": { "name": "Отсутствует", "thermalConductivity": 0.0 }, "thicknessMm": 0 },
+      "insulation": { "material": { "name": "ПИР", "thermalConductivity": 0.024 }, "thicknessMm": 200 },
+      "outsideTemperatureC": 8
+    },
+    "wallG": {
+      "structure": { "material": { "name": "Отсутствует", "thermalConductivity": 0.0 }, "thicknessMm": 0 },
+      "insulation": { "material": { "name": "ПИР", "thermalConductivity": 0.024 }, "thicknessMm": 200 },
+      "outsideTemperatureC": 4
+    },
+    "ceiling": {
+      "structure": { "material": { "name": "Отсутствует", "thermalConductivity": 0.0 }, "thicknessMm": 0 },
+      "insulation": { "material": { "name": "ПИР", "thermalConductivity": 0.024 }, "thicknessMm": 200 },
+      "outsideTemperatureC": 33
+    },
+    "floor": {
+      "structure": { "material": { "name": "Бетон", "thermalConductivity": 1.75 }, "thicknessMm": 200 },
+      "insulation": { "material": { "name": "Пеноплэкс М45", "thermalConductivity": 0.032 }, "thicknessMm": 150 },
+      "outsideTemperatureC": 2
+    },
+    "mode": {
+      "refrigeratorType": "Хранение замороженной продукции",
+      "product": "Мясо замороженное",
+      "incomingProductTempC": -12,
+      "roomAir": { "temperatureC": -18, "relativeHumidityPct": 95 },
+      "finalProductTempC": -18,
+      "coolingTimeHours": 24,
+      "equipmentShiftHours": 16,
+      "dailyLoading": { "pallets": 120, "tonnes": 84.0 },
+      "dailyUnloading": { "pallets": 120, "tonnes": 84.0 },
+      "palletMassT": 0.7,
+      "storedProduct": { "pallets": 900, "tonnes": 630.0 },
+      "packaging": "Деревянные поддоны с картонными ящиками",
+      "packagingMassT": 8.4,
+      "ventilationAirChangesPerHour": 0,
+      "recuperatorEfficiencyPct": 0,
+      "airAfterRecuperator": { "temperatureC": -10, "relativeHumidityPct": 90 },
+      "ambientRoomsAir": { "temperatureC": 25, "relativeHumidityPct": 60 },
+      "supplyAir": { "temperatureC": -10, "relativeHumidityPct": 90 },
+      "doors": [
+        {
+          "name": "Откатные ворота — экспедиция",
+          "count": 2,
+          "openTimePerPassSec": 30,
+          "openHoursPerDay": null,
+          "widthM": 2.8,
+          "heightM": 3.5,
+          "openingCoefficientPct": 30,
+          "outsideTemperatureC": 4,
+          "turnoverSharePct": 100,
+          "curtain": "Воздушная завеса"
+        },
+        {
+          "name": "Распашная дверь служебная",
+          "count": 1,
+          "openTimePerPassSec": null,
+          "openHoursPerDay": 0.5,
+          "widthM": 1.0,
+          "heightM": 2.1,
+          "openingCoefficientPct": 3,
+          "outsideTemperatureC": 8,
+          "turnoverSharePct": null,
+          "curtain": null
+        }
+      ],
+      "doorCurtain": "Воздушная завеса",
+      "workersCount": 6,
+      "lightingPowerWPerM2": 3,
+      "vehicles": [
+        {
+          "name": "Ричтрак ETV214",
+          "travelMotorKw": 8.5,
+          "liftMotorKw": 15.5,
+          "utilizationPct": 75,
+          "count": 3,
+          "timePerPalletMin": 2.7,
+          "reservePct": 20,
+          "travelSpeedKmh": 11.0,
+          "liftSpeedMps": 0.45,
+          "liftHeightM": 7.5,
+          "timePerPassSec": 45
+        },
+        {
+          "name": "Тележка ERE 120",
+          "travelMotorKw": 2.0,
+          "liftMotorKw": 2.2,
+          "utilizationPct": 90,
+          "count": 2,
+          "timePerPalletMin": 2.3,
+          "reservePct": 20,
+          "travelSpeedKmh": 6.0,
+          "liftSpeedMps": 0.04,
+          "liftHeightM": 0.1,
+          "timePerPassSec": 30
+        }
+      ],
+      "vehicleLoadFactorPct": 15,
+      "airCoolersCount": 4,
+      "distanceToMachineRoomM": null
+    }
+  },
+  "inputs": {
+    "productHeatCapacityKjKgK": 1.68,
+    "packagingHeatCapacityKjKgK": 1.55,
+    "enthalpyReferenceTempC": -30,
+    "respirationHeatWPerT": 0,
+    "supplyAirEnthalpyKjKg": -6.0,
+    "roomAirEnthalpyKjKg": -16.6,
+    "roomAirDensityKgM3": 1.38,
+    "heatPerPersonW": 390,
+    "fanMotorPowerPerCoolerW": 3200,
+    "fanSimultaneityCoeff": 1.0,
+    "totalVehiclePowerKwOverride": 62.5,
+    "doorHeatFluxDiagramKwM2": [
+      [0.0, 0.0], [5.0, 1.0], [10.0, 2.0], [15.0, 3.5], [20.0, 4.5],
+      [25.0, 6.2], [30.0, 7.8], [35.0, 9.5], [40.0, 11.0]
+    ],
+    "doorThetaOverridesKwM2": {
+      "Откатные ворота — экспедиция": 4.6
+    },
+    "doorTambourCoeff": 1.0,
+    "solarRadiationW": 0,
+    "outerSurfaceCoeffWm2K": 23,
+    "innerSurfaceCoeffWm2K": 10,
+    "defrostHoursPerDay": 4,
+    "safetyFactorPct": 15,
+    "designCity": "Уфа",
+    "outdoorTemperatureC": 33,
+    "outdoorHumidityPct": 65
+  }
+}

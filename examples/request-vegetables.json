@@ -1,0 +1,119 @@
+{
+  "spec": {
+    "roomNumber": "5.1",
+    "name": "Овощи",
+    "dimensions": { "lengthM": 12.0, "widthM": 8.0, "heightM": 4.0 },
+    "wallA": {
+      "structure": { "material": { "name": "Отсутствует", "thermalConductivity": 0.0 }, "thicknessMm": 0 },
+      "insulation": { "material": { "name": "ПИР", "thermalConductivity": 0.024 }, "thicknessMm": 80 },
+      "outsideTemperatureC": 12
+    },
+    "wallB": {
+      "structure": { "material": { "name": "Отсутствует", "thermalConductivity": 0.0 }, "thicknessMm": 0 },
+      "insulation": { "material": { "name": "ПИР", "thermalConductivity": 0.024 }, "thicknessMm": 80 },
+      "outsideTemperatureC": 12
+    },
+    "wallV": {
+      "structure": { "material": { "name": "Кирпич", "thermalConductivity": 0.44 }, "thicknessMm": 380 },
+      "insulation": { "material": { "name": "ПИР", "thermalConductivity": 0.024 }, "thicknessMm": 80 },
+      "outsideTemperatureC": 25
+    },
+    "wallG": {
+      "structure": { "material": { "name": "Отсутствует", "thermalConductivity": 0.0 }, "thicknessMm": 0 },
+      "insulation": { "material": { "name": "ПИР", "thermalConductivity": 0.024 }, "thicknessMm": 80 },
+      "outsideTemperatureC": 12
+    },
+    "ceiling": {
+      "structure": { "material": { "name": "Отсутствует", "thermalConductivity": 0.0 }, "thicknessMm": 0 },
+      "insulation": { "material": { "name": "ПИР", "thermalConductivity": 0.024 }, "thicknessMm": 100 },
+      "outsideTemperatureC": 30
+    },
+    "floor": {
+      "structure": { "material": { "name": "Бетон", "thermalConductivity": 1.75 }, "thicknessMm": 150 },
+      "insulation": { "material": { "name": "Пенополистирол", "thermalConductivity": 0.034 }, "thicknessMm": 100 },
+      "outsideTemperatureC": 5
+    },
+    "mode": {
+      "refrigeratorType": "Хранение",
+      "product": "Овощи",
+      "incomingProductTempC": 8,
+      "roomAir": { "temperatureC": 2, "relativeHumidityPct": 90 },
+      "finalProductTempC": 2,
+      "coolingTimeHours": 24,
+      "equipmentShiftHours": 8,
+      "dailyLoading": { "pallets": 40, "tonnes": 24.0 },
+      "dailyUnloading": { "pallets": 40, "tonnes": 24.0 },
+      "palletMassT": 0.6,
+      "storedProduct": { "pallets": 120, "tonnes": 72.0 },
+      "packaging": "Деревянные поддоны с картонными ящиками",
+      "packagingMassT": 2.9,
+      "ventilationAirChangesPerHour": 0.5,
+      "recuperatorEfficiencyPct": 0,
+      "airAfterRecuperator": { "temperatureC": 25, "relativeHumidityPct": 60 },
+      "ambientRoomsAir": { "temperatureC": 25, "relativeHumidityPct": 60 },
+      "supplyAir": { "temperatureC": 25, "relativeHumidityPct": 60 },
+      "doors": [
+        {
+          "name": "Откатные ворота — в коридор",
+          "count": 1,
+          "openTimePerPassSec": 20,
+          "openHoursPerDay": null,
+          "widthM": 2.4,
+          "heightM": 3.0,
+          "openingCoefficientPct": 25,
+          "outsideTemperatureC": 12,
+          "turnoverSharePct": 100,
+          "curtain": null
+        }
+      ],
+      "doorCurtain": null,
+      "workersCount": 2,
+      "lightingPowerWPerM2": 3,
+      "vehicles": [
+        {
+          "name": "Тележка ERE 120",
+          "travelMotorKw": 2.0,
+          "liftMotorKw": 2.2,
+          "utilizationPct": 90,
+          "count": 1,
+          "timePerPalletMin": 2.3,
+          "reservePct": 20,
+          "travelSpeedKmh": 6.0,
+          "liftSpeedMps": 0.04,
+          "liftHeightM": 0.1,
+          "timePerPassSec": 30
+        }
+      ],
+      "vehicleLoadFactorPct": 30,
+      "airCoolersCount": 2,
+      "distanceToMachineRoomM": 15
+    }
+  },
+  "inputs": {
+    "productHeatCapacityKjKgK": 3.8,
+    "packagingHeatCapacityKjKgK": 1.55,
+    "enthalpyReferenceTempC": -30,
+    "respirationHeatWPerT": 38.13,
+    "supplyAirEnthalpyKjKg": 55.3,
+    "roomAirEnthalpyKjKg": 11.54,
+    "roomAirDensityKgM3": 1.32,
+    "heatPerPersonW": 258,
+    "fanMotorPowerPerCoolerW": 1500,
+    "fanSimultaneityCoeff": 1.0,
+    "totalVehiclePowerKwOverride": null,
+    "doorHeatFluxDiagramKwM2": [
+      [0.0, 0.0], [5.0, 1.0], [10.0, 2.0], [15.0, 3.5], [20.0, 4.5],
+      [25.0, 6.2], [30.0, 7.8], [35.0, 9.5], [40.0, 11.0]
+    ],
+    "doorThetaOverridesKwM2": {},
+    "doorTambourCoeff": 1.0,
+    "solarRadiationW": 0,
+    "outerSurfaceCoeffWm2K": 23,
+    "innerSurfaceCoeffWm2K": 10,
+    "defrostHoursPerDay": 3,
+    "safetyFactorPct": 10,
+    "designCity": "Москва",
+    "outdoorTemperatureC": 30,
+    "outdoorHumidityPct": 55
+  }
+}
