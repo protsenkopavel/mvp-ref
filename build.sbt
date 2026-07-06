@@ -10,6 +10,8 @@ lazy val root = (project in file("."))
       "com.lihaoyi" %% "upickle" % "4.2.1",                   // JSON-сериализация
       "io.swagger.core.v3" % "swagger-annotations" % "2.2.22", // описания полей DTO
       "com.typesafe.scala-logging" %% "scala-logging" % "3.9.5", // API логирования (slf4j)
-      "ch.qos.logback" % "logback-classic" % "1.5.6"          // бэкенд логирования
+      "ch.qos.logback" % "logback-classic" % "1.5.6",         // бэкенд логирования
+      "org.scalikejdbc" %% "scalikejdbc" % "4.3.2",           // доступ к БД
+      "org.xerial" % "sqlite-jdbc" % "3.50.3.0"               // встраиваемая БД SQLite
     )
   )
